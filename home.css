@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+
+  font-family: Raleway, sans-serif;
+
+}
+
+/* Estilos gerais para o container de produtos */
+#products {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 60px 0; 
+}
+
+.body {
+  background: linear-gradient(-45deg, #ffffff, #94454e, #8b3939, #a11828);
+  background-size: 500% 400%;
+  animation: gradient 5s ease infinite;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.body.hover {
+  background: #fff; /* Altera o background para #fff quando o botão está em hover */
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+/* Seus estilos de botão e outras regras de estilo aqui */
+
+
+/* Estilos para o título dos produtos */
+#products h2 {
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Estilos para cada produto */
+#products .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;  /* Reduzindo a largura */
+  margin-bottom: 60px;
+  padding: 30px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+  text-decoration: none; /* Remove qualquer sublinhado */
+
+  
+  
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+#products .product a:hover {
+
+  text-decoration: none; /* Remove qualquer sublinhado */
+
+
+}
+
+#products .product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.384);
+  color: inherit; /* Mantém a cor padrão do texto */
+}
+
+/* Estilos para a imagem do produto */
+#products .product img {
+  width: 300px;  /* Reduzindo o tamanho da imagem */
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+/* Estilos para o título do produto */
+#products .product h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-left: 20px;  /* Adicionando um espaçamento à esquerda */
+}
+#products .product h3:hover {
+  text-decoration: none;
+}
+/* Media queries para responsividade */
+
+
+
+
+
+@media (max-width: 768px) {
+  #products .product {
+    width: 90%;
+  }
+
+  #products .product img {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+
+  #products h2 {
+    font-size: 34px;
+    margin-bottom: 50px;
+  }
+
+  #products .product h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 435px) {
+  #products .product {
+    width: 100%;
+  }
+
+  #products .product h3 {
+    font-size: 15px;
+  }
+  #products h2 {
+    font-size: 25px;
+  }
+  #products .product img {
+    width: 200px;
+    height: 120px;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+}

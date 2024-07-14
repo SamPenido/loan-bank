@@ -1,0 +1,122 @@
+.container1 {
+    max-width: 800px;
+    background: #fff;
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.781);
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-bottom: 100px;
+    border-radius: 25px;
+  }
+  
+  
+  
+  /* Estilos para o container principal */
+  .container1 {
+    margin-top: 100px;
+    max-width: 500px;
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+  
+  /* Estilos para o texto "DEIXE SEU CONTATO" */
+  .text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para o formulário */
+  .form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para os rótulos */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para os campos de entrada */
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="msg"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 70px;
+    text-align: left;
+    direction: ltr; /* Garante que o texto esteja alinhado à esquerda */
+  }
+  
+  /* Estilos para o botão */
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #570c15;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #941221;
+  }
+  
+  @media (max-width: 700px) {
+    .container1 .text {
+      font-size: 30px;
+    }
+  
+    .container1 form {
+      padding: 10px 0 0 0;
+    }
+  
+    .container1 form .form-row {
+      display: block;
+    }
+  
+    .container1 form .form-row .input-data {
+      margin: 35px 0!important;
+    }
+  }
+  
+  
+  @media (max-width: 500px) {
+    .container1 .text{
+      font-size: 30px;
+    }
+    .container form{
+      padding: 10px 0 0 0;
+    }
+    .container form .form-row{
+      display: block;
+    }
+    form .form-row .input-data{
+      margin: 35px 0!important;
+    }
+    .container1 {
+      max-width: 90%;
+      padding: 20px;
+      margin-bottom: 100px;
+    }
+  }
