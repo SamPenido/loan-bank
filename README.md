@@ -1,6 +1,6 @@
 # loan-bank
 
-Royal Note: Website Development Project
+Website Development Project
 
 Introduction
 We have developed a modern and functional website for the banking services company Royal Note, incorporating the latest web technologies to ensure an exceptional user experience and robust security features.
